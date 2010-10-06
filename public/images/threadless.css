@@ -1,0 +1,401 @@
+/*** Threadless Global Styles ***/
+
+/* Palette ----------------------------------------------
+Dark Blue = #1b325f
+Medium Blue = #3c89c8
+Light Blue = #cfe2f1
+Lightest Blue = #ecf3f9
+
+Red = #500000
+Pink = #eb1f7a
+Dk Red = #500000
+
+Dark Gray = #333
+Medium Gray = #737373
+Gray = #999
+Light Gray = #d1d1d1
+Lightest Gray = #e1e1e1
+
+Orange = #f26c4f
+Light Pink-Orange = #fcf1ef
+---------------------------------------------------------- */
+
+/* Z-index ------------------------------------------------
+Use increments of 100 
+topbar container, language drop, login form = 1000
+universal dropdown, header, header search, site nav = 900
+---------------------------------------------------------- */
+
+/* Reset
+================================================== */	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+background: transparent;
+border: 0;
+font-size: 100%;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+/* remember to define focus styles! */
+:focus {
+outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+text-decoration: none;
+}
+del {
+text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* Accessibility Navigation & Hide - old & might wanna re-write 
+================================================== */	
+ol#accessibility-nav, 
+label.over,
+.hide,
+.structural,
+.browse-products h2,
+.product-listing .info dt, 
+#site-navigation li .dropdown ul:after
+{ position: absolute; top: -999em !important; left: -999em !important; height: 1px; width: 1px; }
+
+/* Global
+================================================== */
+body { 
+background: #FFF; 
+position: relative;
+text-align: left;
+width: 100%; 
+}
+body, p, td, input, select, textarea, li {
+color: #666;
+font-family: helvetica, arial;
+font-size: 12px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, dl, dd {
+font-weight: normal;
+margin: 0;
+padding: 0;
+}
+.main_container .hide {
+height: 0;
+text-indent: -9999em;
+}
+
+a { color: #3d89c8; text-decoration: none; }
+a:visited { color: #3d89c8; }
+a:hover { cursor: pointer; text-decoration: underline; }
+a:active { color: #3d89c8; text-decoration: underline; }
+a:focus { outline: none; }
+
+h1, h2, h4, ul, li, li a, p {
+float: left;
+}
+
+h1 { color: #1b325f; font-size: 24px; }
+h2 { color: #1b325f; font-size: 20px; }
+h3 { color: #1b325f; font-size: 18px; }
+h4 { color: #3c89c8; font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+ul {
+list-style-type: none;
+}
+
+input[type="button"], button {
+background: none;
+border: none;
+}
+input[type="button"]:hover {
+cursor: pointer;
+}
+input[type="button"]:focus, input:focus {
+outline: none;
+}
+
+hr { display: none; } /* this is old */
+
+/* Breadcrumbs
+====================================================== */
+.crumbs, .crumbs li, .crumbs a {
+float: left;	
+}
+.crumbs, .return_link.top {
+margin: 0;
+}	
+.crumbs {
+font-family: helvetica, arial;
+list-style-type: none;
+padding: 0;
+width: auto;
+}
+.crumbs li, .crumbs a, .return_link.top a {
+color: #3c89c8;
+font-size: 10px;
+text-decoration: none;
+}
+.crumbs a, .crumbs .active {
+padding: 0 5px;
+}
+.crumbs .home a {
+padding-left: 0;
+}
+.crumbs a:hover, .return_link a:hover {
+text-decoration: underline;
+}
+
+/* Dropdowns - this can also be updated with rendered corners 
+& new dropdown technique
+=============================================== */
+.dropdown { 
+position: absolute; 
+padding-bottom: 4px; 
+left: -999em; 
+}
+.dropdown .tl, .dropdown .tr, .dropdown .bl, .dropdown .br { 
+background: url(bg_ui-elements.png) no-repeat; 
+display: block; 
+height: 5px;
+overflow: hidden; 
+position: absolute; 
+width: 5px; 
+z-index: 900; 
+}
+.dropdown .tl { 
+background: #c4c4c4 none; 
+left: 0; 
+top: 0; 
+width: 1px; 
+}
+.dropdown .tr { 
+background-position: 100% 0; 
+right: 0; 
+top: 0; 
+}
+.dropdown .bl { 
+background-position: 0 -5px;  
+bottom: 0; 
+left: 0; 
+}
+.dropdown .br {
+background-position: 100% -5px;  
+bottom: 0; 
+right: 0; 
+}
+
+/* To re-use the dropdown class, add and customize the following styles. Add the first selector to main.js:
+.class { position: relative; }
+.class .dropdown { top: px; }
+.class:hover .dropdown,
+.class .hover .dropdown { left: 0; }
+.class .dropdown .bl { width: px } // width of dropdown minus 5px  
+ 
+The following is needed if the dropdown is wider than the parent / trigger element:
+.class .dropdown { padding-top: 4px; }
+.class .dropdown .tr { width: px; } // width of dropdown minus 1px 
+*/
+
+/* Main Content
+====================================================== */
+.content_container { 
+clear: both;
+margin: 0px auto; 
+}
+.main_container {
+clear: both;
+float: left;
+margin: 5px 0 0 0;
+padding: 12px 0 0 0;
+position: relative;
+}
+.content_container,
+.main_container {
+width: 964px;
+}
+.main_content, .sidebar, section {
+float: left;
+}
+.main_content {
+width: 636px;
+}
+
+/* Sidebar 
+-------------------------------------------------- */
+/* Old Sidebar ------------------- */
+.contentMain #sidebar .module-top {
+margin-top: 54px;
+padding: 0 0 20px;
+border-bottom: 4px solid #D7E8F4;
+}
+.contentMain #sidebar .module {
+padding-bottom: 20px;
+}
+/* special cases */
+.contentMain #sidebar .module-pelican {
+border-bottom: none;
+}
+.contentMain #sidebar #loveshome {
+margin-bottom: 0;
+}
+.contentMain #sidebar .module-tour {
+border-top: 4px solid #D7E8F4;
+border-bottom: 4px solid #D7E8F4;
+margin: 0 0 20px;
+padding: 7px 0 7px;
+}
+.contentMain #sidebar .score {
+margin-top: -20px;
+padding-bottom: 0;
+}
+.contentMain #sidebar #amazing_tees {
+padding-bottom: 0;
+}
+/* New Sidebar --------------------- */
+.sidebar {
+width: 308px;
+}
+.sidebar.right {
+margin-left: 20px;
+}
+.sidebar.left {
+margin-right: 20px;
+}
+
+/* Forms
+-------------------------------------------------- */
+.main_container input {
+-moz-border-radius: 3px; 
+-webkit-border-radius: 3px;
+}
+
+/* Pagination 
+-------------------------------------------------- */
+.main_content .pagination {
+width: 636px; 
+}
+.pagination {
+padding: 15px 0 14px 0;
+}
+.pagination li {
+margin: 0 4px;
+}
+.pagination a {
+color: #3c89c8;
+}
+.pagination .previous {
+background: url(left_arrow_ltblue.jpg) no-repeat left center;  
+margin: 0 11px 0 0;
+padding-left: 9px;
+}
+.pagination .next {
+background: url(right_arrow_ltblue.jpg) no-repeat right center;  
+margin: 0 0 0 11px;
+padding-right: 9px;
+}
+.pagination .disabled {
+background: none;
+color: #737373;
+padding: 0;
+}
+.pagination .active {
+color: #1b325f;
+}
+
+/* Product List 
+-------------------------------------------------- */
+.product_list, .product_list dt, .product_list dd,
+.product_item img, .product_item dl {
+float: left;
+}
+.product_item {
+margin: 0 20px 20px 0;
+position: relative;
+width: 144px;
+}
+.product_item:nth-child(5n) {
+margin-right: 0;
+}
+.product_item dl {
+height: 66px;
+margin: 5px 0 0 0;
+}
+.product_list dt {
+height: 0;
+text-indent: -9999em;
+}
+.product_item dd {
+margin: 2px 0 0 0;
+width: 144px;
+}
+.product_item .title a {
+color: #1c3360;
+font-size: 13px;
+}
+.product_item .designer {
+color: #3c89c8;
+font-size: 10px;
+line-height: 15px;
+}
+.product_item .designer a {
+color: #3c89c8;
+font-size: 11px;
+}
+/* Info */
+.product_item .info {
+background-color: #3D89C8;
+height: 11px;
+margin: 0;
+/*padding: 5px 6px 4px 6px;*/
+padding: 5px 6px 4px 0;
+position: absolute;
+top: 196px;
+left: 0;
+width: auto;
+}
+.product_item .sale {
+background-color: #eb1f7a;
+}
+.product_item .info dl {
+height: auto;
+margin-top: 0;
+}
+.product_item .info dl dd {
+color: #FFF;
+display: inline;
+float: left;
+font-size: 11px;
+font-weight: bold;
+height: auto;
+margin: 0;
+width: auto;
+}
+.product_item .info .price dd,
+.product_item .style { 
+padding-left: 6px;
+}
+.product_item .sale .full_price {
+color: #500000;
+text-decoration: line-through;
+}

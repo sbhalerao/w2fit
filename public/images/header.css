@@ -1,0 +1,424 @@
+/*** Threadless Header Styles ***/
+
+.header_container { 
+clear: both; 
+margin: 0px auto; 
+}
+header { 
+float: left;
+/*height: 104px; */
+height: 112px; /* to acct for larger/promo logos */
+margin: 0 auto;
+position: relative;
+z-index: 900;  
+}
+.header_container,
+header {
+/*height: auto;*/
+padding-right: 4px;
+width: 969px;
+}
+
+/* Logo 
+=======================================  */
+header .threadless, 
+header .threadless span { 
+display: block; 
+height: 112px; 
+overflow: hidden; 
+text-indent: -9999em;
+width: 174px; 
+}
+header .threadless { 
+float: left; 
+left: -5px;
+position: relative; 
+}
+header .threadless span { 
+background: url(logo.gif) no-repeat; 
+position: absolute; 
+left: 0; 
+top: 0; 
+}
+header a.threadless span { 
+cursor: pointer; 
+}
+
+/* Cart 
+(see cart_clip.css for cart clip styles)
+======================================= */
+/* Begin Cart Container */
+header .cart_outer_container {
+float: right;
+position: absolute;
+right: 4px;
+width: 334px;
+z-index: 1200;
+}
+header .cart_container {
+float: right;
+position: absolute;
+right: 0;
+top: 0;
+z-index: 1200;
+}
+/* End Cart Container */
+header .cart {
+float: right; 
+margin: 0;
+padding: 15px 0 14px 0;
+}
+header .cart a {
+float: left;
+}
+header .cart, header .cart a {
+display: block;
+height: 34px;
+width: 116px;
+}
+header .cart a:hover, header .cart a:visited { 
+color: #1b325f;
+}
+/* Cart Status */
+header .cart a .cart_status {
+background: url(main_nav_footer.png) no-repeat -505px -34px;
+height: 34px;
+margin: -1px 7px 0 0;
+position: static; /* overrides bkgd prop from old catalog.css */
+width: 36px;
+}
+header .cart.not-empty a .cart_status {
+background-position: -505px 0; 
+}
+header .cart dt, header .cart dd {
+float: left;
+}
+header .cart dt { 
+height: 0;
+text-indent: -9999em;
+}
+header .cart dd { 
+font-size: 12px;
+width: 73px;
+}
+header .cart .cart_items {
+color: #1B325F;
+text-align: center;
+}
+/* View Cart */
+header .cart .cart_view { 
+background: url(main_nav_footer.png) no-repeat -551px 0;
+height: 17px; 
+overflow: hidden;
+position: relative;
+text-indent: -9999em;
+top: 3px;
+width: 73px; 
+}
+header .cart a:hover .cart_view {
+background-position: -551px -17px;
+}
+
+/* Search 
+======================================== */
+header .search,
+header .search fieldset,
+header .search input, 
+header .search label, 
+header .search button,
+header .search .show_dropdown, 
+header .search .dropdown, 
+header .search .dropdown ul {
+float: left;
+position: relative;
+}
+header .search fieldset,
+header .search .show_dropdown,
+header .search button {
+height: 29px;
+}
+header .search { 
+float: right;
+top: 65px;
+position: absolute; 
+right: 4px; 
+width: 221px; 
+}
+header .search fieldset { width: 221px; }
+header .search .dropdown input { display: none; }
+
+/* save for HTML 5 placeholder css
+header .search > fieldset > label { 
+display: block; 
+height: 0;
+text-indent: -9999em; 
+}
+*/
+/* old school placeholder */
+header .search .placeholder {
+color: #999;
+font-size: 13px;
+left: 10px;
+position: absolute;
+top: 8px;
+z-index: 100;
+}
+
+header .search input[type="text"] {
+border: 1px solid #c4c4c4;
+font-size: 13px;
+margin: 0;
+padding: 7px 8px 6px 8px;
+width: 150px;
+height: 14px; /* test */
+-moz-border-radius: 3px; 
+-webkit-border-radius: 3px;
+-moz-border-radius-topright: 0; 
+-webkit-border-top-right-radius: 0;
+-moz-border-radius-bottomright: 0; 
+-webkit-border-bottom-right-radius: 0;
+}
+header .search input[placeholder] {
+color: #999;
+}
+
+/* Search drop */
+header .search .show_dropdown {
+background: #FFF url(main_nav_footer.png) no-repeat -719px -44px; 
+text-indent: -9999em;
+width: 25px;
+}
+header .search .show_dropdown:hover { 
+background-position: -719px -73px; 
+height: 28px;
+}
+header .search .show_dropdown:focus {
+outline: none;
+}
+header .search .dropdown { 
+overflow: hidden;
+/*padding-bottom: 5px;*/
+width: 194px;
+}
+header .search .show_dropdown:hover .dropdown, 
+header .search .show_dropdown.hover .dropdown {
+left: -168px; 
+top: 26px;  
+z-index: 900; 
+}
+header .search .dropdown ul {
+background: #FFF url(main_nav_footer.png) no-repeat -613px -204px; 
+border: 1px solid #c4c4c4; 
+border-top: none;
+padding: 4px 0;
+width: 192px;
+z-index: 1000; 
+-moz-border-radius: 3px; 
+-webkit-border-radius: 3px;
+-moz-border-radius-topright: 0; 
+-webkit-border-top-right-radius: 0;
+-moz-border-radius-topleft: 0; 
+-webkit-border-top-left-radius: 0;
+}
+header .search .dropdown li {
+background: #FFF; 
+color: #3c89c8;
+display: inline; 
+text-indent: 0; 
+}
+header .search .dropdown li, 
+header .search .dropdown label, 
+header .search .dropdown label:hover {
+width: 182px;
+}
+header .search .dropdown label { 
+display: block; 
+padding: 6px 0 6px 10px;  
+}
+header .search .dropdown label:hover { 
+background-color: #3c89c8; 
+color: #FFF; 
+cursor: pointer;
+text-decoration: none; 
+}
+header .search button {
+background: url(main_nav_footer.png) no-repeat -754px -44px; 
+display: block; 
+text-indent: -9999px;
+width: 27px; 
+z-index: 1100;
+}
+header .search button:hover {
+background-position: -754px -73px;
+cursor: pointer;
+}
+/* disable bkgd imgs from old search */
+header .search .dropdown .bl, header .search .dropdown .br {
+background: none;
+display: none;
+height: 0;
+}
+
+/* Main Nav
+================================================== */
+header h2 { /* Accessibility */
+position: absolute; 
+text-indent: -9999em; 
+}
+header .main_nav { 
+float: left; 
+left: -16px; 
+top: 62px; /* test */
+/*margin: 62px 0 0 0;*/
+width: auto; 
+}
+header .main_nav,
+header .main_nav li {  
+position: relative; 
+z-index: 900; 
+} 
+header .main_nav li, header .main_nav li a,
+header .main_nav li:hover {
+float: left; 
+display: block;
+}
+header .main_nav li {
+background: none; /* overrides bkgd prop from catalog.css */
+height: auto;
+margin-right: 16px;
+}
+header .main_nav li h3 a {
+text-indent: -9999em;
+}
+header .main_nav li a { 
+background: url(main_nav_footer.png) no-repeat 0 0;
+height: 30px;
+overflow: hidden;
+position: relative;   
+z-index: 900; 
+}
+header .main_nav li:hover {
+background: url(main_nav_footer.png) no-repeat 0 -30px;
+}
+header .main_nav li:hover a {
+background: none;
+}
+/* Shop */
+header .main_nav li.shop a { 
+background-position: 0 0;
+width: 83px;
+}
+header .main_nav li.shop:hover { 
+background-position: 0 -30px;
+}
+/* Participate */	
+header .main_nav li.participate a { 
+background-position: -99px 0px;
+width: 140px;
+}
+header .main_nav li.participate:hover { 
+background-position: -99px -30px;
+}
+/* Community */
+header .main_nav li.community a { 
+background-position: -255px 0;
+width: 148px;
+}
+header .main_nav li.community:hover { 
+background-position: -255px -30px;
+}
+/* Info */	
+header .main_nav li.info a { 
+background-position: -420px 0;
+left: 1px; /* to align with Sean's grid */
+position: relative;
+width: 74px;
+}
+header .main_nav li.info:hover { 
+background-position: -420px -30px; 
+left: 1px;
+}
+/* Main Nav Dropdown */
+header .main_nav li .dropdown { 
+top: 30px;  
+width: 160px;
+}
+header .main_nav li:hover .dropdown,
+header .main_nav li.hover .dropdown { 
+padding: 5px 0;
+left: 0; 
+}
+header .main_nav li .dropdown ul, header .main_nav li .dropdown li, 
+header .main_nav .dropdown .bl {	
+width: 158px;
+}
+header .main_nav li .dropdown ul { 
+background: #FFF; 
+border-right: 1px solid #c4c4c4; 
+border-left: 1px solid #c4c4c4;
+overflow: hidden; 
+padding: 0 0 4px 0; 
+z-index: 999;  
+}
+header .main_nav li .dropdown li { 
+padding: 0; 
+}
+header .main_nav li .dropdown li,
+header .main_nav li .dropdown a { 
+background-image: none; 
+height: auto; 
+}
+header .main_nav li .dropdown a { 
+display: block; 
+padding: 4px 10px; 
+width: 138px;
+}
+/* Artist Shoppe Link */
+header .main_nav li .dropdown .shoppe {
+background: url(new_window_icon.png) no-repeat 63px 6px;
+}
+header .main_nav li .dropdown .shoppe:hover {
+background-position: 63px -11px;
+}
+/* Info drop specifics */
+header .main_nav li.info .dropdown a {
+left: 0; /* realign dropdown anchors */
+}
+header .main_nav li .dropdown a:hover {  
+background-color: #3c89c8;
+color: #FFF; 
+text-decoration: none; 
+}
+header .main_nav .dropdown .tl, header .main_nav .dropdown .tr, 
+header .main_nav .dropdown .bl, header .main_nav .dropdown .br { 
+background: url(main_nav_footer.png) no-repeat;
+}
+header .main_nav .dropdown .tl {
+background-position: -409px -195px;
+}
+header .main_nav .dropdown .br { 
+background-position: -776px -200px;
+}
+header .main_nav .dropdown .bl {
+background-position: -409px -200px;
+}
+/* Shop Drop */
+header .main_nav .shop .dropdown .tr { 
+background-position: -704px -195px;
+width: 77px;
+}
+/* Participate Drop */
+header .main_nav .participate .dropdown .tr { 
+background-position: -761px -195px; 
+width: 20px; 
+}
+/* Community Drop */
+header .main_nav .community .dropdown .tr { 
+background-position: -769px -195px; 
+width: 12px; 
+}
+/* Info Drop */
+header .main_nav .info .dropdown .tr { 
+background-position: -695px -195px; 
+width: 86px; 
+}

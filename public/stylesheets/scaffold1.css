@@ -1,0 +1,991 @@
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/**paste my css here **/
+
+
+/* Topbar Styles 
+needs more clean-up
+========================================== */
+#topbar {
+background: url(/images/bar_bg.jpg) repeat-x left top;
+height: 40px;
+margin: 0;
+width: 100%;
+}
+#topbar_container {
+display: block;
+height: 35px;
+margin: 0 auto;
+padding: 5px 0 0 0;
+position: relative;
+width: 1004px;
+z-index: 1000;
+}
+/* Sites Navigation --------------- */
+#topbar #topbar_sites { 
+float: left;
+left: 5px;
+list-style-type: none;
+margin: 0;
+padding: 0;
+position: relative;
+width: auto;
+}
+#topbar #topbar_sites li, #topbar #topbar_sites li a {
+float: left;
+width: auto;
+}
+#topbar #topbar_sites li a { 
+background: url(/images/topbar.png) no-repeat 0 0;
+height: 35px;
+overflow: hidden;
+text-indent: -9999px;
+}
+#topbar #topbar_sites li#topbar_typetees, #topbar #topbar_sites li#topbar_select, #topbar #topbar_sites li#topbar_threadlesskids {
+position: relative;
+}
+#topbar #topbar_sites li {
+margin: 0 10px;
+}
+#topbar #topbar_sites li#topbar_typetees, #topbar #topbar_sites li#topbar_select { /* to sneakily hide Typetees & Select */
+display: none;
+margin: 0;
+}
+/* Buttons */
+#topbar #topbar_sites #topbar_threadless, #topbar #topbar_sites #topbar_threadless a {
+background-position: 0 -70px;
+margin-left: 0;
+width: 88px;
+}
+#topbar #topbar_sites li#topbar_typetees, #topbar #topbar_sites #topbar_typetees a {
+background-position: -120px -70px;
+width: 73px;
+}
+#topbar #topbar_sites li#topbar_threadlesskids, #topbar #topbar_sites #topbar_threadlesskids a {
+background-position: -225px -70px;
+width: 42px;
+}
+/* Active States */
+#topbar #topbar_sites .active { 
+margin: 0 5px;
+}
+#topbar #topbar_sites #topbar_threadless.active, #topbar #topbar_sites #topbar_threadless.active a, 
+#topbar #topbar_sites #topbar_threadless.active a:hover {
+background-position: 0 0;
+margin-left: 0;
+width: 103px;
+}
+#topbar #topbar_sites #topbar_typetees.active, #topbar #topbar_sites #topbar_typetees.active a, 
+#topbar #topbar_sites #topbar_typetees.active a:hover {
+background-position: -105px 0;
+width: 103px;
+}
+#topbar #topbar_sites #topbar_threadlesskids.active, #topbar #topbar_sites #topbar_threadlesskids.active a, 
+#topbar #topbar_sites #topbar_threadlesskids.active a:hover {
+background-position: -210px 0; 
+width: 72px;
+}
+/* Hover States */
+#topbar #topbar_sites #topbar_threadless a:hover {
+background-position: 0 -35px;
+/*width: 75px;*/
+width: 88px;
+}
+#topbar #topbar_sites #topbar_typetees a:hover {
+background-position: -120px -35px;
+width: 73px;
+}
+#topbar #topbar_sites #topbar_threadlesskids a:hover {
+background-position: -225px -35px;
+width: 42px;
+}
+
+/* Top Callouts --------------------------- */
+#topbar #topbar_callouts {
+	float: left;
+	left: 60px;
+	list-style: none;
+	margin: 0 0 0;
+	padding: 0 0 0;
+	position: relative;
+}
+#topbar #topbar_callouts li a {
+	background-color: #474747;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFF;
+	display: inline;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	padding: 0 11px;
+	text-decoration: none;
+}
+
+/* Top Links --------------------------- */
+#topbar_links {
+float: right;
+margin: 0;
+position: relative;
+right: 15px;
+width: auto;
+}
+#topbar_links, #topbar_links ul {
+height: 35px; 
+list-style-type: none;
+padding-left: 0;
+}
+#topbar_links li, #topbar_links a {
+color: #d1d1d1;
+float: left;
+font-family: arial;
+text-align: left;
+width: auto;
+}
+#topbar_links li {
+font-size: 12px;
+height: 35px;
+line-height: 35px;
+margin: 0 10px;
+}
+#topbar_links .join_btn, #topbar_links .user_links {
+margin-right: 0;
+padding: 0;
+}
+#topbar_links a {
+text-decoration: none;
+}
+#topbar_links a:hover {
+color: #FFF;
+text-decoration: underline;
+}
+/* Language Select Pure CSS Dropdown */
+#topbar_links .lang_select {
+padding: 0;
+position: relative;
+width: auto;
+/*width: 74px;*/
+}
+#topbar_links .lang_select a.current {
+padding-left: 10px;
+width: auto;
+/*width: 64px;*/
+}
+#topbar_links .lang_select a.current span {
+background: url(/images/topbar.png) no-repeat 100% -175px; /* language select arrow */
+padding-right: 10px;
+}
+#topbar_links .lang_select .drop, #topbar_links .lang_select .drop li, #topbar_links .lang_select .drop a,
+#topbar_links li.lang_select:hover .drop, #topbar_links li.lang_select a:hover .drop {
+float: left;
+width: 74px;
+}
+#topbar_links .lang_select .drop {
+height: 0;
+left: 0;
+margin-left: 0;
+position: absolute;
+top: 35px;
+visibility: hidden;
+}
+#topbar_links .lang_select .drop li {
+background-color: #585858;
+display: block;
+height: auto;
+line-height: 20px;
+margin: 0;
+padding: 0 0 0 10px;
+width: 64px;
+}
+#topbar_links .lang_select .drop li.current {
+display: none; /* Hides Selected Language from Dropdown */
+}
+#topbar_links li.lang_select:hover .drop, #topbar_links li.lang_select a:hover .drop {
+background: url(/images/topbar.png) no-repeat -104px 100%; /* adds bottom round */
+height: auto;
+padding-left: 0;
+padding-bottom: 3px;
+position: absolute;
+visibility: visible;
+width: 74px;
+}
+/* ie Warning Bar ------------ */
+#ie_warning {
+background-color: #f26c4f;
+color: #fff;
+display: none;
+margin: 0;
+padding: 5px 10px;
+}
+#ie_warning h1 {
+float: left;
+font-size: 36px;
+width: 100px;
+}
+#ie_warning p {
+left: 5px;
+position: relative;
+top: 5px;
+}
+#ie_warning a {
+color: #ffff00;
+}
+#ie_warning h1, #ie_warning p {
+margin: 0;
+padding: 0;
+}
+* html #ie_warning {
+display: block;
+}
+
+/**************** menu coding *****************/
+#topnav {position:absolute;top:42px;left:230px;width:440px;z-index:30;}
+#topnav ul {list-style:none;margin:0;padding:0;margin-right:5px;float:left;}
+#topnav a, #topnav h2 {margin:0;padding:0;}
+#topnav h2,#topnav ul li,#topnav ul li ul {margin:0;padding:0;}
+#topnav a { font-size:12px;text-decoration: none;color:#3c89c8;}
+#topnav a:hover {color:#1b325f;}
+#topnav a.red {color:#cc0000;}
+#topnav a.red:hover {color:#ff0000;}
+#topnav_cart{position:absolute;left:700px;top:28px;width:250px;text-align:center;}
+#topnav_cartguy{margin-right:10px;display:inline;text-align:left;padding-top:3px;}
+#topnav_numitems{text-align:right;display:inline;line-height:46px;height:46px;overflow:hidden;}
+#topnav_numitems a{text-decoration:none;color:#1b325f;font-weight:bold;font-family:Arial;}
+#topnav_checkout{width:109px;display:inline;padding-top:7px;}
+#topnav li {position: relative;}
+#topnav ul li ul  {position:absolute;}
+#topnav ul li ul li{padding:5px 10px 0 10px; background-color:#fff; border-left:1px solid #e1e1e1;border-right:1px solid #e1e1e1;}
+div#topnav ul li ul{display: none;}
+div#topnav ul li:hover ul{display: block;}
+
+div#topnav ul li ul li{margin:0;font-family:Arial;}
+div#topnav ul li h2 a{background-repeat:no-repeat;display:block;height:32px;}
+
+li.topnav_guys ul,li.topnav_girls ul,li.topnav_info ul{width:140px;}
+li.topnav_participate ul{width:170px;}
+
+li.topnav_guys h2 a{background-image:(guys.gif);width:91px;}
+li.topnav_guys:hover h2 a{background-position:-91px 0px;}
+
+li.topnav_girls h2 a{background-image:url(/images/girls.gif);width:90px;}
+li.topnav_girls:hover h2 a{background-position:-90px 0px;}
+
+li.topnav_participate h2 a{background-image:url(/images/participate.gif);width:156px;}
+li.topnav_participate:hover h2 a{background-position:-156px 0px;}
+
+li.topnav_info h2 a{background-image:url(/images/info.gif);width:83px;}
+li.topnav_info:hover h2 a{background-position:-83px 0px;}
+
+.topnav_divider div{height:1px;overflow:hidden;}
+.topnav_divider div{border-top:1px solid #e1e1e1;height:1px;overflow:hidden;}
+ 
+ /*** Threadless Global Styles ***/
+
+/* Palette ----------------------------------------------
+Dark Blue = #1b325f
+Medium Blue = #3c89c8
+Light Blue = #cfe2f1
+Lightest Blue = #ecf3f9
+
+Red = #500000
+Pink = #eb1f7a
+Dk Red = #500000
+
+Dark Gray = #333
+Medium Gray = #737373
+Gray = #999
+Light Gray = #d1d1d1
+Lightest Gray = #e1e1e1
+
+Orange = #f26c4f
+Light Pink-Orange = #fcf1ef
+---------------------------------------------------------- */
+
+/* Z-index ------------------------------------------------
+Use increments of 100 
+topbar container, language drop, login form = 1000
+universal dropdown, header, header search, site nav = 900
+---------------------------------------------------------- */
+
+/* Reset
+================================================== */	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+background: transparent;
+border: 0;
+font-size: 100%;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+/* remember to define focus styles! */
+:focus {
+outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+text-decoration: none;
+}
+del {
+text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* Accessibility Navigation & Hide - old & might wanna re-write 
+================================================== */	
+ol#accessibility-nav, 
+label.over,
+.hide,
+.structural,
+.browse-products h2,
+.product-listing .info dt, 
+#site-navigation li .dropdown ul:after
+{ position: absolute; top: -999em !important; left: -999em !important; height: 1px; width: 1px; }
+
+/* Global
+================================================== */
+body { 
+background: #FFF; 
+position: relative;
+text-align: left;
+width: 100%; 
+}
+body, p, td, input, select, textarea, li {
+color: #666;
+font-family: helvetica, arial;
+font-size: 12px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, dl, dd {
+font-weight: normal;
+margin: 0;
+padding: 0;
+}
+.main_container .hide {
+height: 0;
+text-indent: -9999em;
+}
+
+a { color: #3d89c8; text-decoration: none; }
+a:visited { color: #3d89c8; }
+a:hover { cursor: pointer; text-decoration: underline; }
+a:active { color: #3d89c8; text-decoration: underline; }
+a:focus { outline: none; }
+
+h1, h2, h4, ul, li, li a, p {
+float: left;
+}
+
+h1 { color: #1b325f; font-size: 24px; }
+h2 { color: #1b325f; font-size: 20px; }
+h3 { color: #1b325f; font-size: 18px; }
+h4 { color: #3c89c8; font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { color: #FFFFFF; font-size: 12px; }
+
+ul {
+list-style-type: none;
+}
+
+input[type="button"], button {
+background: none;
+border: none;
+}
+input[type="button"]:hover {
+cursor: pointer;
+}
+input[type="button"]:focus, input:focus {
+outline: none;
+}
+
+hr { display: none; } /* this is old */
+/* Main Content
+====================================================== */
+.content_container { 
+clear: both;
+margin: 0px auto; 
+}
+.main_container {
+clear: both;
+float: left;
+margin: 5px 0 0 0;
+padding: 12px 0 0 0;
+position: relative;
+}
+/**this shifts over the main area **/
+.content_container,
+.main_container {
+width: 964px;
+}
+.main_content, .sidebar, section {
+float: left;
+}
+.main_content {
+width: 636px;
+}
+
+/*** Threadless Header Styles ***/
+
+.header_container { 
+clear: both; 
+margin: 0px auto; 
+}
+header { 
+float: left;
+/*height: 104px; */
+height: 112px; /* to acct for larger/promo logos */
+margin: 0 auto;
+position: relative;
+z-index: 900;  
+}
+.header_container,
+header {
+/*height: auto;*/
+padding-right: 4px;
+width: 969px;
+}
+
+/* Logo 
+=======================================  */
+header .threadless, 
+header .threadless span { 
+display: block; 
+height: 112px; 
+overflow: hidden; 
+text-indent: -9999em;
+width: 174px; 
+}
+header .threadless { 
+float: left; 
+left: -5px;
+position: relative; 
+}
+header .threadless span { 
+background: url(/images/logo.gif) no-repeat; 
+position: absolute; 
+left: 0; 
+top: 0; 
+}
+header a.threadless span { 
+cursor: pointer; 
+}
+
+/* Main Nav
+================================================== */
+header h2 { /* Accessibility */
+position: absolute; 
+text-indent: -9999em; 
+}
+header .main_nav { 
+float: left; 
+left: -16px; 
+top: 62px; /* test */
+/*margin: 62px 0 0 0;*/
+width: auto; 
+}
+header .main_nav,
+header .main_nav li {  
+position: relative; 
+z-index: 900; 
+} 
+header .main_nav li, header .main_nav li a,
+header .main_nav li:hover {
+float: left; 
+display: block;
+}
+header .main_nav li {
+background: none; /* overrides bkgd prop from catalog.css */
+height: auto;
+margin-right: 16px;
+}
+header .main_nav li h3 a {
+text-indent: -9999em;
+}
+header .main_nav li a { 
+background: url(/images/main_nav_footer.png) no-repeat 0 0;
+height: 30px;
+overflow: hidden;
+position: relative;   
+z-index: 900; 
+}
+header .main_nav li:hover {
+background: url(/images/main_nav_footer.png) no-repeat 0 -30px;
+}
+header .main_nav li:hover a {
+background: none;
+}
+/* Shop */
+header .main_nav li.shop a { 
+background-position: 0 0;
+width: 83px;
+}
+header .main_nav li.shop:hover { 
+background-position: 0 -30px;
+}
+/* Participate */	
+header .main_nav li.participate a { 
+background-position: -99px 0px;
+width: 140px;
+}
+header .main_nav li.participate:hover { 
+background-position: -99px -30px;
+}
+/* Community */
+header .main_nav li.community a { 
+background-position: -255px 0;
+width: 148px;
+}
+header .main_nav li.community:hover { 
+background-position: -255px -30px;
+}
+/* Info */	
+header .main_nav li.info a { 
+background-position: -420px 0;
+left: 1px; /* to align with Sean's grid */
+position: relative;
+width: 74px;
+}
+header .main_nav li.info:hover { 
+background-position: -420px -30px; 
+left: 1px;
+}
+/* Main Nav Dropdown */
+header .main_nav li .dropdown { 
+top: 30px;  
+width: 160px;
+}
+header .main_nav li:hover .dropdown,
+header .main_nav li.hover .dropdown { 
+padding: 5px 0;
+left: 0; 
+}
+header .main_nav li .dropdown ul, header .main_nav li .dropdown li, 
+header .main_nav .dropdown .bl {	
+width: 158px;
+}
+header .main_nav li .dropdown ul { 
+background: #FFF; 
+border-right: 1px solid #c4c4c4; 
+border-left: 1px solid #c4c4c4;
+overflow: hidden; 
+padding: 0 0 4px 0; 
+z-index: 999;  
+}
+header .main_nav li .dropdown li { 
+padding: 0; 
+}
+header .main_nav li .dropdown li,
+header .main_nav li .dropdown a { 
+background-image: none; 
+height: auto; 
+}
+header .main_nav li .dropdown a { 
+display: block; 
+padding: 4px 10px; 
+width: 138px;
+}
+/*** Threadless Footer Styles ***/
+
+.footer_container { 
+clear: both; 
+margin: 0px auto; 
+padding: 0; 
+}
+footer {
+background: #fff;
+border-top: 1px solid #e1e1e1; 
+float: left;
+font-family: Helvetica, Arial, sans-serif; 
+padding-top: 15px; 
+margin-top: 80px;
+}
+.footer_container,
+footer {
+width: 964px;
+}
+
+/* Sections
+=========================================== */
+footer section { 
+float: left; 
+margin-right: 20px; 
+padding-bottom: 10px;
+width: 144px;  
+}
+footer h3, footer h3 a {
+display: block; 
+height: 17px;
+}
+footer h3 { 
+background-image: url(/images/main_nav_footer.png);
+left: 0; 
+margin-bottom: 2px;
+overflow: hidden; 
+text-indent: -9999em;
+top: 0;
+}
+footer h3 a { width: 100%; }
+footer section li, 
+footer section a { float: none; }
+
+footer section li { 
+height: 12px;
+padding: 3px 0;
+}
+footer section p { margin-top: 15px; }
+
+/* Threadless on Facebook 
+========================================= */
+footer .we_like_you {
+border-bottom: 1px solid #E1E1E1;
+margin: 0 0 15px 0;
+padding-top: ;
+width: 964px;
+}
+footer .we_like_you h3 {
+background: url(/images/'header_footer_sprite.png') no-repeat 0 0;
+float: right;
+left: -63px;
+position: relative;
+top: 15px;
+width: 658px;
+}
+footer .we_like_you .facebook_props {
+border-right: 1px solid #E1E1E1;
+padding-right: 20px;
+width: 202px;
+}
+footer .we_like_you h4 {
+display: block;
+height: 0;
+text-indent: -9999em;
+}
+
+/* Addresses (subsections retail & offices)
+========================================== */
+footer section section {
+margin-top: 22px;
+padding-bottom: 0;
+}
+footer .retail { 
+clear: left;
+margin-right: 19px;
+}
+footer .offices { margin-right: 0; }
+footer section section h3 { margin-bottom: 1px; }
+
+footer section section .address {
+float: left;
+margin: 0 0 18px 0;
+}
+footer section section .two { margin-bottom: 0; }
+
+footer section .fn, 
+footer section .org { 
+height: 0;
+left: -999em;
+position: absolute;  
+}
+footer section section ul { float: left; }
+footer section section li { height: 12px; }
+
+/* Join Newsletter 
+=============================================== */
+footer .newsletter_signup_form, 
+footer .newsletter_signup_form fieldset,
+footer .newsletter_signup_form input,
+footer .newsletter_signup_form .loading_container {
+float: left;
+width: auto;
+}
+footer .newsletter_signup_form {
+margin: 3px 0 0 0;
+position: relative;
+}
+footer .newsletter_signup_form h1 {
+font-size: 12px;
+}
+footer .newsletter_signup_form input[type="email"] {
+border: 1px solid #c4c4c4;
+margin: 0;
+padding: 7px 6px 5px 6px;
+width: 176px;
+-moz-border-radius: 3px; 
+-webkit-border-radius: 3px;
+}
+footer .newsletter_signup_form .submit {
+background: url(/images/'main_nav_footer.png') no-repeat -667px -112px;
+height: 27px;
+margin-left: 8px;
+width: 50px;
+}
+footer .newsletter_signup_form .submit:hover {
+background-position: -667px -139px;
+}
+
+/* Footnotes 
+============================================ */
+.footnotes, .footnotes .social, .footnotes .social li, .footnotes .feeds {
+float: left;
+}
+.footnotes {
+border-top: 3px solid #cfe2f1;
+clear: left; 
+font-size: 12px;
+margin: 15px 0 30px 0;
+padding: 10px 0 0 0;
+width: 964px;
+}
+.footnotes .social li, .footnotes .truste {
+background-image: url(/images/'main_nav_footer.png');
+}
+.footnotes .social li {
+line-height: 16px;
+margin-right: 10px;
+padding-left: 21px;
+}
+
+.footnotes .social .twitter { background-position: 0 -176px; }
+.footnotes .social .facebook { background-position: 0 -160px; }
+.footnotes .social .rss { background-position: 0 -144px; }
+.footnotes .social .rss .feeds, .footnotes .social .rss .feeds li { background: none; }
+
+.footnotes .social .rss .feeds li {
+margin-right: 0;
+padding: 0 8px 0 0;
+width: auto;
+}
+.footnotes .copy {
+clear: left;
+float: left;
+font-size: 10px;
+margin-top: 7px;
+width: 50%;
+}
+.footnotes .truste {
+background-position: -181px -174px;
+float: right;
+height: 31px;
+text-indent: -9999em;
+width: 110px;
+}
+/* 
+	Select slider Stylesheet 
+	css/en/promos/selectslider.css
+*/
+
+/*========================================
+	s t r u c t u r e
+========================================*/
+.select-banner {
+	height: 460px;
+}
+.select-banner div.info {
+	background: url(/images/info-bg.jpg) left top no-repeat #b1aba4;
+	float: left;
+	width: 298px;
+	height: 460px;
+	padding-left: 20px;
+}
+
+
+/*========================================
+	s l i d e r
+	
+	anythingSlider v1.2
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+========================================*/
+.anythingSlider {
+	float: left;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	width: 646px;
+	height: 460px;
+	position: relative;
+	margin: 0 0 0;
+}
+.anythingSlider .wrapper {
+	width: 646px;
+	overflow: hidden;
+	height: 460px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 0 0 0;
+	z-index: 1;
+}
+.anythingSlider .wrapper ul {
+	width: 32700px;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	/*left: -40px;*/
+	left: 0;
+	margin: 0;
+}
+div.home-slider .anythingSlider .wrapper ul {
+	left: 0;
+}
+.anythingSlider .wrapper ul li {
+	display: block;
+	float: left;
+	height: 460px;
+	width: 646px;
+	margin: 0;
+	padding: 0;
+}
+.select-land div.anythingSlider ul li a img {
+	border: none;
+	display: block;
+}
+.anythingSlider .arrow {
+	display: none;
+}
+.anythingSlider .forward {}
+.anythingSlider .back {}
+.anythingSlider .forward:hover {}
+.anythingSlider .back:hover {}
+.thumbNav {
+	position: absolute;
+	top: 420px;
+	left: 22px;
+	z-index: 99;
+}
+.home-slider .thumbNav {
+	top: 430px;
+}
+.thumbNav li {
+	display: inline;
+}
+.thumbNav a {
+	background: url(/images/dots.png) left top no-repeat transparent;
+	display: inline;
+	float: left;
+	height: 30px;
+	width: 13px;
+	margin: 0;
+	padding: 0;
+	text-indent: -999em;
+	outline: none;
+}
+.select-banner .thumbNav a:hover {
+	background-position: left -60px;
+}
+.select-banner .thumbNav a.cur {
+	background-position: left -30px;
+}
+.select-banner .start-stop {
+	display: none;
+}
+
+/*========================================
+	i n f o
+========================================*/
+.select-banner div.info {
+	color: #FFF;
+}
+.select-banner div.info h1,
+.select-banner div.info ul li,
+.select-banner div.info a {
+	background:url(/images/text.png) left top;
+	text-indent: -999em;
+	width: 280px;
+}
+.select-banner div.info h1 {
+	margin: 0;
+	padding: 0;
+	margin: 176px 0 -15px;
+	height: 70px;
+}
+.select-banner div.info h2, .select-banner div.info h2 a{
+	margin: 0;
+	padding: 0;
+	margin: 240px 0px -15px 4px;
+	height: 70px;
+	
+}
+.select-banner div.info ul {
+	list-style: none;
+	margin: 0 0 8px;
+	padding: 0;
+	position: relative;
+	height: 98px;
+	width: 100%;
+}
+.select-banner div.info ul li {
+	height: 98px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.select-banner div.info ul li.i1{
+	background-position: left -70px;
+	display: block;
+}
+.select-banner div.info ul li.i2{
+	background-position: left -170px;
+}
+.select-banner div.info ul li.i3{
+	background-position: left -270px;
+}
+.select-banner div.info a {
+	width: 133px;
+	height: 50px;
+	float: left;
+	display: inline;
+}
+

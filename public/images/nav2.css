@@ -1,0 +1,61 @@
+#preloadedImages {
+   width: 0px;
+   height: 0px;
+   display: inline;
+   background-image: url(score_buyit_o.gif);
+} 
+
+/*main nav*/
+#nav_logo{position:absolute;left:0px;top:0px;}
+#nav_shop{position:absolute;left:204px;top:15px;}
+#nav_participate{position:absolute;left:279px;top:15px;}
+#nav_info{position:absolute;left:430px;top:15px;}
+#nav_account{position:absolute;left:499px;top:15px;}
+#nav_login{position:absolute;left:499px;top:15px;}
+
+/*global subnav stuff*/
+#nav_holder{z-index:650;position:absolute;left:204px;top:55px;height:60px;width:452px;} 
+.navmenu a i {visibility: hidden;}
+.navmenu a{z-index:650;display:block;overflow:hidden;position:absolute;text-decoration:none;top:0px;height:46px;background-image:url(/imgs/0.gif);}
+.navmenu a:hover{background-image:url(nav_overlay.gif);}
+.navmenu {z-index:650;position:absolute;left:0px;top:14px;}
+
+/*subnav for shop*/
+#nav_catalog{width:77px;left:75px;}
+#nav_stock{width:62px;left:152px;}
+#nav_12club{width:54px;left:216px;}
+#nav_gallery{width:94px;left:270px;}
+#nav_retail{width:66px;left:364px;}
+
+/*subnav for participate*/
+#nav_submissions{width:70px;left:0px;}
+#nav_submit{width:70px;left:77px;}
+#nav_loves{width:105px;left:207px;}
+#nav_streetteam{width:67px;left:318px;}
+#nav_blogs{width:72px;left:383px;}
+
+/*subnav for info*/
+#nav_news{width:83px;left:10px;}
+#nav_press{width:63px;left:94px;}
+#nav_contact{width:67px;left:156px;}
+#nav_help{width:73px;left:286px;}
+#nav_order{width:68px;left:364px;}
+
+/*subnav for account*/
+#nav_accountpage{width:82px;left:0px;}
+#nav_orders{width:75px;left:82px;}
+#nav_profile{width:73px;left:158px;}
+#nav_post{width:70px;left:291px;}
+#nav_submitphoto{width:79px;left:360px;}
+
+/*cart stuff*/
+#nav_cart{position:absolute;left:702px;top:66px;width:225px;}
+#nav_cart_total{font-size:39px;line-height:39px;font-weight:bold;font-family:Arial;color:#1b325f;}
+
+/*user stuff*/
+#nav_holder_login{margin-top:8px;}
+#nav_user{position:absolute;left:702px;top:32px;width:225px;}
+.speech{padding-top:4px;padding-left:6px;background-image:url(speech_bg.gif);height:25px;}
+.speech a{text-decoration:none;}
+#nav_login_error{z-index:901;position:absolute;left:499px;top:15px;}
+#nav_user_login_error{z-index:900;position:absolute;left:700px;top:32px;width:238px;border:1px solid #E7E7E7;background-color:#FFFFEE;font-family:arial;font-size:11px;}

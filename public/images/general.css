@@ -1,0 +1,76 @@
+.m_l_20{margin-left:20px;}
+.m_l_15{margin-left:15px;}
+.m_l_24{margin-left:24px;}
+.m_r_10{margin-left:10px;}
+.m_b_10{margin-bottom:10px;}
+.m_b_20{margin-bottom:20px;}
+.m_b_15{margin-bottom:15px;}
+.m_b_12{margin-bottom:12px;}
+.m_t_4{margin-top:4px;}
+.f_24{font-size:24px;}
+.f_14{font-size:14px;}
+.f_16{font-size:16px;}
+.f_18{font-size:18px;}
+.f_11{font-size:11px;}
+.i{font-style:italic;}
+.sp_10{height:10px;overflow:hidden;}
+.b_t_dotted{border-top:1px dotted #898989;}
+.cart_headers td{font-size:11px;}
+.cart_review_order{border-bottom:1px dotted #898989;margin-bottom:10px;padding-bottom:10px;}
+.cart_image{background-color:#fff;width:105px;padding:5px;border:1px solid #ddd;}
+.arial{font-family:arial}
+.input1{font-family:arial;font-size:16px;padding:3px;}
+.row_blue td{background-color:#e9f2f9;} 
+.step_image{height:75px;text-align:center;float:left;margin-top:10px;}
+.step_image div{width:80px;margin:0 10px 5px 10px;text-align:center;color:#898989;}
+.cart_right{padding:15px 20px 15px 20px;border:1px solid #b6d3ea;clear:both;}
+.p_b_5{padding-bottom:5px;}
+.p_t_5{padding-top:5px;}
+.m_b_5{margin-bottom:5px;}
+.m_t_10{margin-top:10px;}
+.m_t_20{margin-top:20px;}
+.w_260{width:260px;}
+.w_200{width:200px;}
+.w_120{width:120px;}
+.w_70{width:70px;}
+.w_20{width:20px;}
+.w_30{width:30px;}
+.p_3{padding:3px;}
+.p_20{padding:20px;}
+.p_10{padding:10px;}
+.p_15{padding:15px;}
+.p_5{padding:5px;}
+.p_l_10{padding-left:10px;}
+.p_r_10{padding-right:10px;}
+.b_dotted{border:1px dotted #898989;}
+.bg_darkblue{background-color:#1b325f;}
+.bg_lightblue{background-color:#e9f2f9;}
+.bg_orange{background-color:#f26c4f;}
+.bg_lightgreen{background-color:#eff6e6;}
+.bg_lightpink{background-color:#feeff6;}
+.white{color:#fff;}
+.ta_center{text-align:center;}
+.cart_alerts li{font-size:14px; margin-left:20px;padding-left:10px;margin-top:5px;}
+.cart_alerts{margin:0px;padding:0px;}
+.mondaya{color:#454545;text-decoration:none;}
+.mondaya:hover{color:#454545;text-decoration:underline;}
+
+#amazingtees {
+    margin-bottom: 20px;
+}
+
+#amazingtees .content {
+    background-color: #fef1eb;
+}
+
+#amazingtees .buttons a {
+    margin-left: 10px;
+}
+
+#amazingtees p {
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+    color: #999;
+    font-size: 10px;
+    text-align: center;
+}

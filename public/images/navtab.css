@@ -1,0 +1,41 @@
+/**************** menu coding *****************/
+#topnav {position:absolute;top:42px;left:230px;width:440px;z-index:30;}
+#topnav ul {list-style:none;margin:0;padding:0;margin-right:5px;float:left;}
+#topnav a, #topnav h2 {margin:0;padding:0;}
+#topnav h2,#topnav ul li,#topnav ul li ul {margin:0;padding:0;}
+#topnav a { font-size:12px;text-decoration: none;color:#3c89c8;}
+#topnav a:hover {color:#1b325f;}
+#topnav a.red {color:#cc0000;}
+#topnav a.red:hover {color:#ff0000;}
+#topnav_cart{position:absolute;left:700px;top:28px;width:250px;text-align:center;}
+#topnav_cartguy{margin-right:10px;display:inline;text-align:left;padding-top:3px;}
+#topnav_numitems{text-align:right;display:inline;line-height:46px;height:46px;overflow:hidden;}
+#topnav_numitems a{text-decoration:none;color:#1b325f;font-weight:bold;font-family:Arial;}
+#topnav_checkout{width:109px;display:inline;padding-top:7px;}
+#topnav li {position: relative;}
+#topnav ul li ul  {position:absolute;}
+#topnav ul li ul li{padding:5px 10px 0 10px; background-color:#fff; border-left:1px solid #e1e1e1;border-right:1px solid #e1e1e1;}
+div#topnav ul li ul{display: none;}
+div#topnav ul li:hover ul{display: block;}
+
+div#topnav ul li ul li{margin:0;font-family:Arial;}
+div#topnav ul li h2 a{background-repeat:no-repeat;display:block;height:32px;}
+
+li.topnav_guys ul,li.topnav_girls ul,li.topnav_info ul{width:140px;}
+li.topnav_participate ul{width:170px;}
+
+li.topnav_guys h2 a{background-image:(guys.gif);width:91px;}
+li.topnav_guys:hover h2 a{background-position:-91px 0px;}
+
+li.topnav_girls h2 a{background-image:url(girls.gif);width:90px;}
+li.topnav_girls:hover h2 a{background-position:-90px 0px;}
+
+li.topnav_participate h2 a{background-image:url(participate.gif);width:156px;}
+li.topnav_participate:hover h2 a{background-position:-156px 0px;}
+
+li.topnav_info h2 a{background-image:url(info.gif);width:83px;}
+li.topnav_info:hover h2 a{background-position:-83px 0px;}
+
+.topnav_divider div{height:1px;overflow:hidden;}
+.topnav_divider div{border-top:1px solid #e1e1e1;height:1px;overflow:hidden;}
+ 

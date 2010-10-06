@@ -12,15 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :question %><br />
-    <%= f.text_area :question, :size => "30x7" %>
+    <%= f.text_area :question, :size => "39x7" %>
   </div>
+<br/>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+   <h6 color="#ffffff"> Your Email: <%= f.text_field :email %></h6>
   </div>
 
   <div class="actions">
-    <%= f.submit 'Shop for me now'%>
+	
+    <%= image_submit_tag("/images/get_started_btn.png")%>
+  
   </div>
 <% end %>

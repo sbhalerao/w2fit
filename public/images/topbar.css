@@ -1,0 +1,498 @@
+/* Topbar Styles 
+needs more clean-up
+========================================== */
+#topbar {
+background: url(bar_bg.jpg) repeat-x left top;
+height: 40px;
+margin: 0;
+width: 100%;
+}
+#topbar_container {
+display: block;
+height: 35px;
+margin: 0 auto;
+padding: 5px 0 0 0;
+position: relative;
+width: 1004px;
+z-index: 1000;
+}
+/* Sites Navigation --------------- */
+#topbar #topbar_sites { 
+float: left;
+left: 5px;
+list-style-type: none;
+margin: 0;
+padding: 0;
+position: relative;
+width: auto;
+}
+#topbar #topbar_sites li, #topbar #topbar_sites li a {
+float: left;
+width: auto;
+}
+#topbar #topbar_sites li a { 
+background: url(topbar.png) no-repeat 0 0;
+height: 35px;
+overflow: hidden;
+text-indent: -9999px;
+}
+#topbar #topbar_sites li#topbar_typetees, #topbar #topbar_sites li#topbar_select, #topbar #topbar_sites li#topbar_threadlesskids {
+position: relative;
+}
+#topbar #topbar_sites li {
+margin: 0 10px;
+}
+#topbar #topbar_sites li#topbar_typetees, #topbar #topbar_sites li#topbar_select { /* to sneakily hide Typetees & Select */
+display: none;
+margin: 0;
+}
+/* Buttons */
+#topbar #topbar_sites #topbar_threadless, #topbar #topbar_sites #topbar_threadless a {
+background-position: 0 -70px;
+margin-left: 0;
+width: 88px;
+}
+#topbar #topbar_sites li#topbar_typetees, #topbar #topbar_sites #topbar_typetees a {
+background-position: -120px -70px;
+width: 73px;
+}
+#topbar #topbar_sites li#topbar_threadlesskids, #topbar #topbar_sites #topbar_threadlesskids a {
+background-position: -225px -70px;
+width: 42px;
+}
+/* Active States */
+#topbar #topbar_sites .active { 
+margin: 0 5px;
+}
+#topbar #topbar_sites #topbar_threadless.active, #topbar #topbar_sites #topbar_threadless.active a, 
+#topbar #topbar_sites #topbar_threadless.active a:hover {
+background-position: 0 0;
+margin-left: 0;
+width: 103px;
+}
+#topbar #topbar_sites #topbar_typetees.active, #topbar #topbar_sites #topbar_typetees.active a, 
+#topbar #topbar_sites #topbar_typetees.active a:hover {
+background-position: -105px 0;
+width: 103px;
+}
+#topbar #topbar_sites #topbar_threadlesskids.active, #topbar #topbar_sites #topbar_threadlesskids.active a, 
+#topbar #topbar_sites #topbar_threadlesskids.active a:hover {
+background-position: -210px 0; 
+width: 72px;
+}
+/* Hover States */
+#topbar #topbar_sites #topbar_threadless a:hover {
+background-position: 0 -35px;
+/*width: 75px;*/
+width: 88px;
+}
+#topbar #topbar_sites #topbar_typetees a:hover {
+background-position: -120px -35px;
+width: 73px;
+}
+#topbar #topbar_sites #topbar_threadlesskids a:hover {
+background-position: -225px -35px;
+width: 42px;
+}
+
+/* Top Callouts --------------------------- */
+#topbar #topbar_callouts {
+	float: left;
+	left: 60px;
+	list-style: none;
+	margin: 0 0 0;
+	padding: 0 0 0;
+	position: relative;
+}
+#topbar #topbar_callouts li a {
+	background-color: #474747;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFF;
+	display: inline;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	padding: 0 11px;
+	text-decoration: none;
+}
+
+/* Top Links --------------------------- */
+#topbar_links {
+float: right;
+margin: 0;
+position: relative;
+right: 15px;
+width: auto;
+}
+#topbar_links, #topbar_links ul {
+height: 35px; 
+list-style-type: none;
+padding-left: 0;
+}
+#topbar_links li, #topbar_links a {
+color: #d1d1d1;
+float: left;
+font-family: arial;
+text-align: left;
+width: auto;
+}
+#topbar_links li {
+font-size: 12px;
+height: 35px;
+line-height: 35px;
+margin: 0 10px;
+}
+#topbar_links .join_btn, #topbar_links .user_links {
+margin-right: 0;
+padding: 0;
+}
+#topbar_links a {
+text-decoration: none;
+}
+#topbar_links a:hover {
+color: #FFF;
+text-decoration: underline;
+}
+/* Language Select Pure CSS Dropdown */
+#topbar_links .lang_select {
+padding: 0;
+position: relative;
+width: auto;
+/*width: 74px;*/
+}
+#topbar_links .lang_select a.current {
+padding-left: 10px;
+width: auto;
+/*width: 64px;*/
+}
+#topbar_links .lang_select a.current span {
+background: url(topbar.png) no-repeat 100% -175px; /* language select arrow */
+padding-right: 10px;
+}
+#topbar_links .lang_select .drop, #topbar_links .lang_select .drop li, #topbar_links .lang_select .drop a,
+#topbar_links li.lang_select:hover .drop, #topbar_links li.lang_select a:hover .drop {
+float: left;
+width: 74px;
+}
+#topbar_links .lang_select .drop {
+height: 0;
+left: 0;
+margin-left: 0;
+position: absolute;
+top: 35px;
+visibility: hidden;
+}
+#topbar_links .lang_select .drop li {
+background-color: #585858;
+display: block;
+height: auto;
+line-height: 20px;
+margin: 0;
+padding: 0 0 0 10px;
+width: 64px;
+}
+#topbar_links .lang_select .drop li.current {
+display: none; /* Hides Selected Language from Dropdown */
+}
+#topbar_links li.lang_select:hover .drop, #topbar_links li.lang_select a:hover .drop {
+background: url(topbar.png) no-repeat -104px 100%; /* adds bottom round */
+height: auto;
+padding-left: 0;
+padding-bottom: 3px;
+position: absolute;
+visibility: visible;
+width: 74px;
+}
+/* Join Button */
+#topbar_links .join_btn { 
+left: 5px; /* for the 10px overhang */
+margin-left: 4px;
+position: relative;
+}
+#topbar_links .join_btn a {
+background-position: -360px 0;
+height: 35px;
+outline: none;
+text-indent: -9999px;
+}
+#topbar_links .join_btn a {
+background-image: url(topbar.png);
+width: 127px;
+}
+.es #topbar_links .join_btn a {
+background-image: url(/imgs/global/topbar/topbar_es.png);
+}
+.fr #topbar_links .join_btn a {
+background-image: url(/imgs/global/topbar/topbar_fr.png);
+}
+.de #topbar_links .join_btn a {
+background-image: url(/imgs/global/topbar/topbar_de.png);
+}
+#topbar_links .join_btn a:hover {
+background-position: -360px -35px;
+}
+/* User Info */
+#topbar_links .user_links {
+background: url(topbar.png) no-repeat 0 -165px;
+}
+#topbar_links .user_links ul {
+background: url(topbar.png) no-repeat 100% -115px;
+float: left;
+left: 5px;
+margin: 0;
+padding: 0 5px 0 0;
+position: relative;
+width: auto;
+}
+#topbar_links .topbar_username span, #topbar_links .topbar_username a {
+float: left;
+width: auto;
+}
+#topbar_links .topbar_username span {
+padding-right: 4px;
+}
+#topbar_links .topbar_username a {
+color: #FFF;
+}
+/* Updated Styles for Login Form */
+#login {
+background: url(topbar.png) no-repeat -179px -151px;
+display: none;
+margin: 0;
+padding: 17px 0 0 0;
+position: absolute;
+right: 33px;/*right:17px;*/
+top: 40px;
+width: 308px;
+z-index: 1000;
+}
+#login.active {
+display: block;
+}
+#topbar_links a#login_toggle { 
+width: auto; 
+}
+#login_chunk, #login_form, #login_enter, #login_form p, #login_form label, #login_form input, 
+#login_form #login_button, #login_forgot, #login_forgot a, #login_error {
+float: left;
+width: auto;
+}
+#login_chunk {
+background: url(topbar.png) no-repeat -179px 100%;
+padding: 0 0 5px 0;
+width: 308px;
+}
+#login_form {
+background: #535353;
+padding-left: 8px;
+width: 300px; 
+* width: 308px; /*IE */
+}
+#login_enter {
+padding-right: 5px;
+width: 180px;
+}
+#login_form #login_enter, #login_form #login_forgot { 
+margin-top: 5px;
+}
+#login_form p {
+margin: 0;
+width: auto;
+}
+#login_forgot, #login_forgot a {
+width: 55px;
+}	
+#login_forgot a {
+line-height: 16px;
+padding-top: 5px;
+text-decoration: underline;
+}
+#login_form label, #login_forgot a {
+color: #D5D5D5;
+font-size: 11px;
+}
+#login_form label {
+line-height: 20px;
+padding-right: 5px;
+width: 60px;
+}
+#login_form input {
+border: none;
+width: 105px;
+}
+#login_form .username, #login_form .password {
+width: 180px;
+}
+#login_form .password {
+clear: left;
+}
+#login_form #login_button {
+background: url(topbar.png) no-repeat -447px -72px;
+border: none;
+clear: none;
+height: 40px;
+line-height: 40px;
+margin: 5px 5px 0 0; 
+text-indent: -999em;
+width: 40px; 
+}	
+#login_error {
+background: #535353; /* url(topbar.png) no-repeat 0 -111px; */
+color: #FFF;
+font-size: 12px;
+margin: 0;
+padding: 5px 20px 5px 40px; 
+width: 248px; 
+* width: 308px; /*IE */
+}
+/* login misc */
+#birthdate {
+padding-top: 10px;
+}
+#login_misc {
+border-bottom: 1px dotted #FFF;
+height: 40px;  
+margin: 0 35px 0 30px;
+}
+#login_misc img {
+float: right;
+width: 88px;
+}
+#login_question {
+color: #CCC; 
+font-size: 11px; 
+margin-left: 30px; 
+margin-right: 35px;
+}
+#login_question a {
+color: #8dc63f;
+}
+
+/* ie Warning Bar ------------ */
+#ie_warning {
+background-color: #f26c4f;
+color: #fff;
+display: none;
+margin: 0;
+padding: 5px 10px;
+}
+#ie_warning h1 {
+float: left;
+font-size: 36px;
+width: 100px;
+}
+#ie_warning p {
+left: 5px;
+position: relative;
+top: 5px;
+}
+#ie_warning a {
+color: #ffff00;
+}
+#ie_warning h1, #ie_warning p {
+margin: 0;
+padding: 0;
+}
+* html #ie_warning {
+display: block;
+}
+
+/* Paypal Promo 04/26/10-05/03/10 ------------------ */
+#topbar_promo, #topbar_promo p {
+float: left;
+width: auto;
+}
+#topbar_promo p span {
+float: left;
+width: auto;
+}
+#topbar_promo {
+background: url(gray_corners.png) no-repeat 0 0;
+color: #d1d1d1;
+font-family: Helvetica, arial;
+font-size: 12px;
+height: 30px;
+margin: 0 20px 0 80px;
+overflow: hidden;
+padding: 0 0 0 7px;
+text-align: center;
+}
+#topbar_promo p {
+background: url(gray_corners.png) no-repeat 100% -31px;
+padding-right: 7px;
+margin: 0;
+}
+#topbar_promo span {
+background-color: #424242;
+padding: 9px 5px 9px 5px;
+}
+#topbar_promo .yay {
+color: #ffff00;
+}
+#topbar_promo .sweet {
+color: #FFF;
+}
+/* Mini-Int'l Login Styles ----------------------- */
+#login_chunk.i18n {
+font-family: helvetica, arial, sans-serif;
+}
+#login_chunk.i18n h2 {
+color: #FFF;
+font-size: 11px;
+}
+#login_chunk.i18n h2 em {
+color: #ff0;
+font-style: normal;
+}
+#login_chunk.i18n label {
+display: block;
+}
+#login_chunk.i18n #login_enter {
+width: auto;
+}
+#login_chunk.i18n #login_forgot,
+#login_chunk.i18n #login_button,
+#login_chunk.i18n #login_form input,
+#login_chunk.i18n #login_form .username,
+#login_chunk.i18n #login_form .password,
+#login_chunk.i18n #login_enter,
+#login_chunk.i18n label {
+float: none;
+width: auto;
+}
+#login_chunk.i18n #login_form .username input,
+#login_chunk.i18n #login_form .password input {
+margin-bottom: 3px;   
+padding: 5px;    
+width: 282px;
+}
+#login_chunk.i18n #login_forgot, #login_forgot a {
+width: auto;
+}
+#login_chunk.i18n #login_forgot a {
+padding-top: 19px;
+text-decoration: none;
+}
+#login_chunk.i18n #login_form #login_enter,
+#login_chunk.i18n #login_form #login_forgot {
+margin-top: 0px;
+}
+#login_chunk.i18n #login_error {
+clear: both;
+float: none;
+font-size: 11px;
+padding: 5px 10px 5px 10px;
+width: 288px;
+}
+#login_chunk.i18n #login_form #login_button {
+background: none;
+height: auto;
+margin-bottom: 5px;
+text-indent: 0px;
+width: auto; 
+}

@@ -1,0 +1,204 @@
+/*** Threadless Footer Styles ***/
+
+.footer_container { 
+clear: both; 
+margin: 0px auto; 
+padding: 0; 
+}
+footer {
+background: #fff;
+border-top: 1px solid #e1e1e1; 
+float: left;
+font-family: Helvetica, Arial, sans-serif; 
+padding-top: 15px; 
+margin-top: 80px;
+}
+.footer_container,
+footer {
+width: 964px;
+}
+
+/* Sections
+=========================================== */
+footer section { 
+float: left; 
+margin-right: 20px; 
+padding-bottom: 10px;
+width: 144px;  
+}
+footer h3, footer h3 a {
+display: block; 
+height: 17px;
+}
+footer h3 { 
+background-image: url(main_nav_footer.png);
+left: 0; 
+margin-bottom: 2px;
+overflow: hidden; 
+text-indent: -9999em;
+top: 0;
+}
+footer .shop h3 { background-position: 0 -112px; width: 35px; }
+footer .participate h3 { background-position: -45px -112px; width: 78px; }
+footer .community h3 { background-position: -133px -112px; width: 85px; }
+footer .info h3 { background-position: -228px -112px; width: 29px; }
+footer .contact h3 { background-position: -267px -112px; margin-bottom: 3px; width: 79px; }
+footer .retail h3 { background-position: -356px -112px; width: 42px; }
+footer .offices h3 { background-position: -408px -112px; width: 49px; }
+
+footer h3 a { width: 100%; }
+
+footer section li, 
+footer section a { float: none; }
+
+footer section li { 
+height: 12px;
+padding: 3px 0;
+}
+footer li .shoppe {
+background: url(new_window.gif) no-repeat 100% 3px;
+padding-right: 11px;
+}
+footer .contact { 
+margin-right: 0; 
+overflow: hidden;
+padding-bottom: 0;
+width: 308px;  
+}
+footer section p { margin-top: 15px; }
+
+/* Threadless on Facebook 
+========================================= */
+footer .we_like_you {
+border-bottom: 1px solid #E1E1E1;
+margin: 0 0 15px 0;
+padding-top: ;
+width: 964px;
+}
+footer .we_like_you h3 {
+background: url('header_footer_sprite.png') no-repeat 0 0;
+float: right;
+left: -63px;
+position: relative;
+top: 15px;
+width: 658px;
+}
+footer .we_like_you .facebook_props {
+border-right: 1px solid #E1E1E1;
+padding-right: 20px;
+width: 202px;
+}
+footer .we_like_you h4 {
+display: block;
+height: 0;
+text-indent: -9999em;
+}
+
+/* Addresses (subsections retail & offices)
+========================================== */
+footer section section {
+margin-top: 22px;
+padding-bottom: 0;
+}
+footer .retail { 
+clear: left;
+margin-right: 19px;
+}
+footer .offices { margin-right: 0; }
+footer section section h3 { margin-bottom: 1px; }
+
+footer section section .address {
+float: left;
+margin: 0 0 18px 0;
+}
+footer section section .two { margin-bottom: 0; }
+
+footer section .fn, 
+footer section .org { 
+height: 0;
+left: -999em;
+position: absolute;  
+}
+footer section section ul { float: left; }
+footer section section li { height: 12px; }
+
+/* Join Newsletter 
+=============================================== */
+footer .newsletter_signup_form, 
+footer .newsletter_signup_form fieldset,
+footer .newsletter_signup_form input,
+footer .newsletter_signup_form .loading_container {
+float: left;
+width: auto;
+}
+footer .newsletter_signup_form {
+margin: 3px 0 0 0;
+position: relative;
+}
+footer .newsletter_signup_form h1 {
+font-size: 12px;
+}
+footer .newsletter_signup_form input[type="email"] {
+border: 1px solid #c4c4c4;
+margin: 0;
+padding: 7px 6px 5px 6px;
+width: 176px;
+-moz-border-radius: 3px; 
+-webkit-border-radius: 3px;
+}
+footer .newsletter_signup_form .submit {
+background: url('main_nav_footer.png') no-repeat -667px -112px;
+height: 27px;
+margin-left: 8px;
+width: 50px;
+}
+footer .newsletter_signup_form .submit:hover {
+background-position: -667px -139px;
+}
+
+/* Footnotes 
+============================================ */
+.footnotes, .footnotes .social, .footnotes .social li, .footnotes .feeds {
+float: left;
+}
+.footnotes {
+border-top: 3px solid #cfe2f1;
+clear: left; 
+font-size: 12px;
+margin: 15px 0 30px 0;
+padding: 10px 0 0 0;
+width: 964px;
+}
+.footnotes .social li, .footnotes .truste {
+background-image: url('main_nav_footer.png');
+}
+.footnotes .social li {
+line-height: 16px;
+margin-right: 10px;
+padding-left: 21px;
+}
+
+.footnotes .social .twitter { background-position: 0 -176px; }
+.footnotes .social .facebook { background-position: 0 -160px; }
+.footnotes .social .rss { background-position: 0 -144px; }
+.footnotes .social .rss .feeds, .footnotes .social .rss .feeds li { background: none; }
+
+.footnotes .social .rss .feeds li {
+margin-right: 0;
+padding: 0 8px 0 0;
+width: auto;
+}
+.footnotes .copy {
+clear: left;
+float: left;
+font-size: 10px;
+margin-top: 7px;
+width: 50%;
+}
+.footnotes .truste {
+background-position: -181px -174px;
+float: right;
+height: 31px;
+text-indent: -9999em;
+width: 110px;
+}

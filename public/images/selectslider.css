@@ -1,0 +1,174 @@
+/* 
+	Select slider Stylesheet 
+	css/en/promos/selectslider.css
+*/
+
+/*========================================
+	s t r u c t u r e
+========================================*/
+.select-banner {
+	height: 460px;
+}
+.select-banner div.info {
+	background: url(/images/info-bg.jpg) left top no-repeat #b1aba4;
+	float: left;
+	width: 298px;
+	height: 460px;
+	padding-left: 20px;
+}
+
+
+/*========================================
+	s l i d e r
+	
+	anythingSlider v1.2
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+========================================*/
+.anythingSlider {
+	float: left;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	width: 646px;
+	height: 460px;
+	position: relative;
+	margin: 0 0 0;
+}
+.anythingSlider .wrapper {
+	width: 646px;
+	overflow: hidden;
+	height: 460px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 0 0 0;
+	z-index: 1;
+}
+.anythingSlider .wrapper ul {
+	width: 32700px;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	/*left: -40px;*/
+	left: 0;
+	margin: 0;
+}
+div.home-slider .anythingSlider .wrapper ul {
+	left: 0;
+}
+.anythingSlider .wrapper ul li {
+	display: block;
+	float: left;
+	height: 460px;
+	width: 646px;
+	margin: 0;
+	padding: 0;
+}
+.select-land div.anythingSlider ul li a img {
+	border: none;
+	display: block;
+}
+.anythingSlider .arrow {
+	display: none;
+}
+.anythingSlider .forward {}
+.anythingSlider .back {}
+.anythingSlider .forward:hover {}
+.anythingSlider .back:hover {}
+.thumbNav {
+	position: absolute;
+	top: 420px;
+	left: 22px;
+	z-index: 99;
+}
+.home-slider .thumbNav {
+	top: 430px;
+}
+.thumbNav li {
+	display: inline;
+}
+.thumbNav a {
+	background: url(dots.png) left top no-repeat transparent;
+	display: inline;
+	float: left;
+	height: 30px;
+	width: 13px;
+	margin: 0;
+	padding: 0;
+	text-indent: -999em;
+	outline: none;
+}
+.select-banner .thumbNav a:hover {
+	background-position: left -60px;
+}
+.select-banner .thumbNav a.cur {
+	background-position: left -30px;
+}
+.select-banner .start-stop {
+	display: none;
+}
+
+
+/*========================================
+	i n f o
+========================================*/
+.select-banner div.info {
+	color: #FFF;
+}
+.select-banner div.info h1,
+.select-banner div.info ul li,
+.select-banner div.info a {
+	background:url(text.png) left top;
+	text-indent: -999em;
+	width: 280px;
+}
+.select-banner div.info h1 {
+	margin: 0;
+	padding: 0;
+	margin: 176px 0 -15px;
+	height: 70px;
+}
+.select-banner div.info ul {
+	list-style: none;
+	margin: 0 0 8px;
+	padding: 0;
+	position: relative;
+	height: 98px;
+	width: 100%;
+}
+.select-banner div.info ul li {
+	height: 98px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.select-banner div.info ul li.i1{
+	background-position: left -70px;
+	display: block;
+}
+.select-banner div.info ul li.i2{
+	background-position: left -170px;
+}
+.select-banner div.info ul li.i3{
+	background-position: left -270px;
+}
+.select-banner div.info a {
+	width: 133px;
+	height: 50px;
+	float: left;
+	display: inline;
+}
+.select-banner div.info a.shop-guys {
+	background-position: left -366px;
+}
+.select-banner div.info a.shop-girly {
+	background-position: -133px -366px;
+}
+.select-banner div.info a.shop-guys:hover {
+	background-position: left -417px;
+}
+.select-banner div.info a.shop-girly:hover {
+	background-position: -133px -417px;
+}

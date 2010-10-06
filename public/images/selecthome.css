@@ -1,0 +1,181 @@
+/* 
+	Select Landing Page Stylesheet 
+	css/en/promos/select.css
+*/
+
+
+/*========================================
+	b a s e
+========================================*/
+#landing_container {
+	color: #737373;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	padding-top: 16px;
+}
+.main ul,
+.sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.main ul li img {
+	display: block;
+	margin-bottom: 5px;
+}
+.main a {
+	color: #5789cc;
+	outline: none;
+}
+
+
+/*========================================
+	s t r u c t u r e
+========================================*/
+.select-land #landing_container {
+	width: 964px;
+}
+
+
+/*========================================
+	s e c t i o n s
+========================================*/
+/* section headers */
+div.lead {
+	border-top: solid 3px #cfe2f1;
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 7px 0 9px;
+	margin: 40px 0 0;
+}
+div.lead h3 {
+	background: url(home-headers.gif) left top no-repeat transparent;
+	float: left;
+	display: inline;
+	margin: 0;
+	width: 300px;
+	height: 22px;
+	text-indent: -999em;
+}
+div.lead ul {
+	float: right;
+	display: inline;
+}
+div.lead ul li {
+	float: left;
+	display: inline;
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 8px;
+	border-left: solid 1px #c4c4c4;
+}
+div.lead ul li.first {
+	border: none;
+}
+div.lead ul li a {
+	font-size: 13px;
+}
+div.lead-new {
+	margin: 9px 0 0;
+}
+div.lead-new h3 {
+	background-position: left -22px;
+}
+div.lead-community {
+	margin: 9px 0 0;
+}
+div.lead-community h3 {
+	background-position: left -42px;
+}
+
+
+
+/* items */
+ul.products li {
+	display: inline;
+	float: left;
+	margin-left: 20px;
+}
+ul.products li.first {
+	margin-left: 0;
+}
+ul.products li{
+	height: 262px;
+	overflow: hidden;
+	position: relative;
+	width: 144px;
+}
+ul.products li.biggie {
+	height: 500px;
+	width: 308px;
+}
+.main_container div.main ul.products li a {
+	color: #1b325f;
+	font-size: 13px;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+div.main ul.products li span {
+	display: inline;
+	font-size: 11px;
+	margin: 2px 0 -100px;
+	position: relative;
+}
+.main_container div.main ul.products li span a {
+	color: #3c89c8;
+	float: none;
+	font-size: 11px;
+	width: auto;
+	display: inline;
+}
+ul.products div.hero_price {
+	background-color: #3C89C8;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+	padding: 0 5px;
+	height: 21px;
+	line-height: 21px;
+	position: absolute;
+	top: 177px;
+	left: 0;
+	z-index: 99;
+}
+ul.products li.biggie div.hero_price {
+	top: 439px;
+}
+
+
+
+/*========================================
+	c a l l o u t s
+========================================*/
+ul.callouts {
+	margin-top: -6px;
+}
+ul.callouts li {
+	margin-right: 20px;
+}
+ul.callouts li.last {
+	margin-right: 0;
+}
+
+
+/* product overrides */
+dl.product_list {
+	display: block;
+	width: 984px;
+	margin-right: -20px;
+}
+.product_item:nth-child(5n) {
+	margin-right: 20px;
+}
+dl.product_list .product_item .title a {
+	color: #1C3360;
+}
+dd.info {
+	display: none;
+}
