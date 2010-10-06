@@ -504,7 +504,7 @@ display: block;
 height: 112px; 
 overflow: hidden; 
 text-indent: -9999em;
-width: 174px; 
+width: 400px; 
 }
 header .threadless { 
 float: left; 
@@ -512,7 +512,7 @@ left: -5px;
 position: relative; 
 }
 header .threadless span { 
-background: url(/images/logo.gif) no-repeat; 
+background: url(/images/stylegroupiecklogo3white.jpg) no-repeat; 
 position: absolute; 
 left: 0; 
 top: 0; 
