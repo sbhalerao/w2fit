@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<div class="ss-form"><form action="https://spreadsheets.google.com/formResponse?formkey=dE04QmZ2TWsyUzRFVXFJN3puTFJNSmc6MQ&amp;ifq" method="POST" id="ss-form">
+<div class="ss-form">
+	<script type="text/javascript">var submitted=false;</script>
+	<iframe name="hidden_iframe" id="hidden_iframe"
+	style="display:none;" onload="if(submitted)
+	{window.location='http://smooth-galaxy-24.heroku.com/';}"></iframe>
+	
+	<form action="https://spreadsheets.google.com/formResponse?formkey=dE04QmZ2TWsyUzRFVXFJN3puTFJNSmc6MQ&amp;ifq" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
 <br>
 <div class="errorbox-good">
@@ -13,7 +19,7 @@
 	<div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">
 	<span class="ss-required-asterisk"></span></label>
 	<label class="ss-q-help" for="entry_0"></label>
-	<input type="hidden" name="entry.0.single" value="<%= @post.email %>" class="ss-q-short" id="entry_0"></div></div></div>
+	<input type="hidden" name="entry.0.single" value="<%= @post.question %>" class="ss-q-short" id="entry_0"></div></div></div>
 	<br> <div class="errorbox-good">
 	
 <!-- Beginning of form that should be shown-->
