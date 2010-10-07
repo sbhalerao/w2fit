@@ -991,3 +991,58 @@ div.home-slider .anythingSlider .wrapper ul {
 	display: inline;
 }
 
+/* Jens survey class*/
+#surveywrapper {
+  margin: 0 auto;
+  text-align: left;
+  width: 520px;
+	float:center;
+	display:block;
+	position:relative;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	padding: 0 11px;
+	text-decoration: none;
+}
+
+#surveywrapper p ul li{
+	text-align:left;
+	float:left;
+	position:relative
+}
+#surveybutton {
+    display: block;
+    margin: 580px 0px 0px 0px;
+    }
+
+/* MIDDLE: =middle
+-----------------------------------------------------------------------------------------*/
+#middle h2 {
+  font-size: 32px;
+  line-height: 32px;
+  margin: 20px 50px 20px 50px;
+}
+#middle p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+#surveywrapper {
+
+	border-radius: 5px;
+	color: #FFF;
+	display: inline;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	padding: 0 11px;
+	text-decoration: none;
+}
