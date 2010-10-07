@@ -432,7 +432,7 @@ h2 { color: #1b325f; font-size: 20px; }
 h3 { color: #1b325f; font-size: 18px; }
 h4 { color: #3c89c8; font-size: 16px; }
 h5 { font-size: 14px; }
-h6 { color: #FFFFFF; font-size: 12px; }
+h6 { color: #9B9B9B; font-weight:bold;font-size: 12px; }
 
 ul {
 list-style-type: none;
@@ -479,12 +479,13 @@ width: 636px;
 
 .header_container { 
 clear: both; 
-margin: 0px auto; 
+margin: -17px auto; 
 }
+/**this shifts logo over**/
 header { 
 float: left;
 /*height: 104px; */
-height: 112px; /* to acct for larger/promo logos */
+height: 75px; /* to acct for larger/promo logos */
 margin: 0 auto;
 position: relative;
 z-index: 900;  
