@@ -1,6 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div id="wrapper">
+<div id="middle">
 
-<div class="ss-form">
+
+
+    <h2>Help us build something you want!</h2>
+    <p style="margin-bottom: 0;">We&rsquo;re getting ready to launch and want to make our service more useful for you.</p>
+
+
 	<script type="text/javascript">var submitted=false;</script>
 	<iframe name="hidden_iframe" id="hidden_iframe"
 	style="display:none;" onload="if(submitted)
@@ -9,71 +15,85 @@
 	<form action="https://spreadsheets.google.com/formResponse?formkey=dE04QmZ2TWsyUzRFVXFJN3puTFJNSmc6MQ&amp;ifq" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
 <br>
-<div class="errorbox-good">
-<div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_1">
-<span class="ss-required-asterisk"></span></label>
-<label class="ss-q-help" for="entry_1"></label>
-<input type="hidden" name="entry.1.single" value="<%= @post.email %>" class="ss-q-short" id="entry_1"></div></div></div>
 
-<br> <div class="errorbox-good">
-	<div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">
-	<span class="ss-required-asterisk"></span></label>
-	<label class="ss-q-help" for="entry_0"></label>
-	<input type="hidden" name="entry.0.single" value="<%= @post.question %>" class="ss-q-short" id="entry_0"></div></div></div>
-	<br> <div class="errorbox-good">
-	
-<!-- Beginning of form that should be shown-->
-<div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_2">How much time do you spend searching for clothing on-line (e.g khaki pants/cocktail dress)?
-<span class="ss-required-asterisk">*</span></label>
-<label class="ss-q-help" for="entry_2"></label>
-<input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2"></div></div></div>
-<br> <div class="errorbox-good">
-<div class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_3">If someone is helping you shop for clothing, what&#39;s the #1 thing for them to focus on?
-<span class="ss-required-asterisk">*</span></label>
-<label class="ss-q-help" for="entry_3"></label>
-<ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.3.group" value="a.	Someone that understands my fit/body type" class="ss-q-radio" id="group_3_1">
-a.	Someone that understands my fit/body type</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.3.group" value="b.	Someone that understands my personal style" class="ss-q-radio" id="group_3_2">
-b.	Someone that understands my personal style</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.3.group" value="c.	Someone who is a professional stylist or has a lot of expertise in the field" class="ss-q-radio" id="group_3_3">
+<p>
+	<label for="entry_1"></label>"
+	<input type="hidden" name="entry.1.single" value="<%= @post.email %>"  id="entry_1">
 
-c.	Someone who is a professional stylist or has a lot of expertise in the field</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.3.group" value="d.	Someone who can reduce the &ldquo;clutter&rdquo; to make my shopping easier" class="ss-q-radio" id="group_3_4">
-d.	Someone who can reduce the &ldquo;clutter&rdquo; to make my shopping easier</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.3.group" value="e.	Someone who recommends items that fit my budget" class="ss-q-radio" id="group_3_5">
-e.	Someone who recommends items that fit my budget</label></li>
-</ul></div></div></div>
-<br> <div class="errorbox-good">
-<div class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_4">What&#39;s the #2 most important thing for them to focus on?
-<span class="ss-required-asterisk">*</span></label>
+	<label for="entry_0"></label>
+	<input type="hidden" name="entry.0.single" value="<%= @post.question %>" id="entry_0">
+</p>
 
-<label class="ss-q-help" for="entry_4"></label>
-<ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.4.group" value="a.	Someone that understands my fit/body type" class="ss-q-radio" id="group_4_1">
-a.	Someone that understands my fit/body type</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.4.group" value="b.	Someone that understands my personal style" class="ss-q-radio" id="group_4_2">
-b.	Someone that understands my personal style</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.4.group" value="c.	Someone who is a professional stylist or has a lot of expertise in the field" class="ss-q-radio" id="group_4_3">
-c.	Someone who is a professional stylist or has a lot of expertise in the field</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.4.group" value="d.	Someone who can reduce the &ldquo;clutter&rdquo; to make my shopping easier" class="ss-q-radio" id="group_4_4">
-d.	Someone who can reduce the &ldquo;clutter&rdquo; to make my shopping easier</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.4.group" value="e.	Someone who recommends items that fit my budget" class="ss-q-radio" id="group_4_5">
+<p>
+	<label for="entry_2">How much time do you spend searching for clothing on-line (e.g khaki pants/cocktail dress)?*</label>
+	<input type="text" name="entry.2.single" value="" id="entry_2">
 
-e.	Someone who recommends items that fit my budget</label></li>
-</ul></div></div></div>
-<br> <div class="errorbox-good">
-<div class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_5">3.	If someone knew your personal style, body type, and budget and provided a list of top matches, would you pay for this?
-<span class="ss-required-asterisk">*</span></label>
-<label class="ss-q-help" for="entry_5"></label>
-<ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.5.group" value="Yes" class="ss-q-radio" id="group_5_1">
-Yes</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.5.group" value="No" class="ss-q-radio" id="group_5_2">
-No</label></li>
-</ul></div></div></div>
-<br> <div class="errorbox-good">
+</p>
 
-<div class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_6">4.Would you be willing to make recommendations and help others shop for clothing items on-line?
-<span class="ss-required-asterisk">*</span></label>
-<label class="ss-q-help" for="entry_6"></label>
-<ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.6.group" value="Yes" class="ss-q-radio" id="group_6_1">
-Yes</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.6.group" value="No" class="ss-q-radio" id="group_6_2">
-No</label></li>
-</ul></div></div></div>
+<p>
 <br>
+	<label for="entry_3">If someone is helping you shop for clothing, what&#39;s the #1 thing for them to focus on?*</label>
+	<ul>
+		<li><label><input type="radio" name="entry.3.group" value="a.	Someone that understands my fit/body type" id="group_3_1">
+			Someone that understands my fit/body type</label></li> 
+		<li><label><input type="radio" name="entry.3.group" value="b.	Someone that understands my personal style" id="group_3_2">
+			Someone that understands my personal style</label></li> 
+		<li><label><input type="radio" name="entry.3.group" value="c.	Someone who is a professional stylist or has a lot of expertise in the field" id="group_3_3">
+			Someone who is a professional stylist or has a lot of expertise in the field</label></li>
+		<li><label><input type="radio" name="entry.3.group" value="d.	Someone who can reduce the &ldquo;clutter&rdquo; to make my shopping easier" id="group_3_4">
+			Someone who can reduce the &ldquo;clutter&rdquo; to make my shopping easier</label></li> 
+		<li><label><input type="radio" name="entry.3.group" value="e.	Someone who recommends items that fit my budget"  id="group_3_5">
+			Someone who recommends items that fit my budget</label></li>
+	</ul>
+<br>
+</p>
 
-<div class="ss-item ss-navigate"><div class="ss-form-entry">
-<input type="submit" name="submit" value="Submit"></div></div></form>
-<p></p>
+<p>
+<br>
+	<label for="entry_4">What&#39;s the #2 most important thing for them to focus on?*</label>
+	<ul>
+		<li><label><input type="radio" name="entry.4.group" value="a.	Someone that understands my fit/body type" id="group_4_1">
+			Someone that understands my fit/body type</label></li> 
+		<li><label><input type="radio" name="entry.4.group" value="b.	Someone that understands my personal style" id="group_4_2">
+			Someone that understands my personal style</label></li> 
+		<li><label><input type="radio" name="entry.4.group" value="c.	Someone who is a professional stylist or has a lot of expertise in the field"  id="group_4_3">
+			Someone who is a professional stylist or has a lot of expertise in the field</label></li>
+		<li><label><input type="radio" name="entry.4.group" value="d.	Someone who can reduce the &ldquo;clutter&rdquo; to make my shopping easier"  id="group_4_4">
+			Someone who can reduce the &ldquo;clutter&rdquo; to make my shopping easier</label></li> 
+		<li><label><input type="radio" name="entry.4.group" value="e.	Someone who recommends items that fit my budget"  id="group_4_5">
+			Someone who recommends items that fit my budget</label></li>
+	</ul>
+<br>
+</p>
+
+<p>
+<br>
+	<label for="entry_5">If someone knew your personal style, body type, and budget and provided a list of top matches, would you pay for this?*</label>
+	<ul>
+		<li><label><input type="radio" name="entry.5.group" value="Yes" id="group_5_1"> Yes</label></li> 
+		<li><label><input type="radio" name="entry.5.group" value="No" id="group_5_2">No</label></li>
+	</ul>
+<br>
+</p>
+
+<p>
+<br>
+	<label for="entry_6">Would you be willing to make recommendations and help others shop for clothing items on-line?*</label>
+	<ul>
+		<li><label><input type="radio" name="entry.6.group" value="Yes" id="group_6_1">Yes</label></li> 
+		<li><label><input type="radio" name="entry.6.group" value="No" id="group_6_2">No</label></li>
+	</ul>
+<br>
+</p>
+
+<br><br>
+
+
+<p><input type="submit" name="submit" value="Submit">
+</p>
+</form>
+  </div><!-- /#middle -->
+</div><!-- /#wrapper -->
 
 
 
