@@ -829,13 +829,36 @@ width: 110px;
 	height: 460px;
 }
 .select-banner div.info {
-	background: url(/images/info-bg.jpg) left top no-repeat #b1aba4;
+	background: url(/images/info-bg_notext.png) left top no-repeat #b1aba4;
 	float: left;
 	width: 298px;
 	height: 460px;
 	padding-left: 20px;
 }
 
+.select-banner div.info .dynamictext{
+	float: left;
+	margin: 50px 0px -200px 0px;
+	font-weight:bold;
+	line-height:40px;
+	font-size:24px;
+	font-style: verdana;
+	color: #9A9A9A;
+}
+
+.select-banner div.info h1 {
+	margin: 0;
+	padding: 0;
+	margin: 176px 0 -15px;
+	height: 70px;
+}
+.select-banner div.info h2 {
+	margin: 0;
+	padding: 0;
+	margin: 180px 0px -15px 4px;
+	height: 70px;
+	
+}
 
 /*========================================
 	s l i d e r
@@ -941,19 +964,7 @@ div.home-slider .anythingSlider .wrapper ul {
 	text-indent: -999em;
 	width: 280px;
 }
-.select-banner div.info h1 {
-	margin: 0;
-	padding: 0;
-	margin: 176px 0 -15px;
-	height: 70px;
-}
-.select-banner div.info h2 {
-	margin: 0;
-	padding: 0;
-	margin: 240px 0px -15px 4px;
-	height: 70px;
-	
-}
+
 /*.select-banner div.info h2 a{
 	margin: 0;
 	padding: 0;

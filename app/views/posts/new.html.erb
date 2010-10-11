@@ -2,7 +2,8 @@
 <!--<div id="topbar"></div>-->
 <!-- BEGIN updated header -->
 <div class="header_container">
-    <header><a href="/" rel="home" title="Go to homepage" class="threadless">Logo Here<span></span></a></header><!-- END header -->
+    <header><a href="/" rel="home" title="Go to homepage" class="threadless">Logo Here<span></span></a>
+	</header><!-- END header -->
 </div><!-- END .header_container -->
 <div class="content_container">
 <div class="main_container home-slider">
@@ -10,14 +11,17 @@
 	<div class="anythingSlider">
 		<div class="wrapper">
 			<ul>
-				<li> <img src="/images/PicofGirlinGrass.png" width="646" height="460" alt="" /></a></li>
+				<li><img src="/images/PicofGirlinGrass.png" width="646" height="460" alt="" /></a></li>
 			</ul>        
 		</div><!--end wrapper -->
 	</div> <!-- END AnythingSlider -->
 	<div class="info">	<!-- this is within main_container home-slider, and then select-banner-->	
-			<h2>	<%= render 'form' %>
-			<a href="">Get started</a>
-			<!--button comes with form--></h2>
+			<div class="dynamictext">Let us help you shop! 
+				<br/>What are you looking for?
+				</div>
+					<h2><%= render 'form' %>
+			<a href="">Get started</a></h2>
+			<!--button comes with form-->
 				</div>
 </div><!-- /.info -->
 </div><!-- /.banner -->	
