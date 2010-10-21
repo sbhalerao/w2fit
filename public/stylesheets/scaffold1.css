@@ -52,7 +52,8 @@ background color: #FFFFFF;
   margin:auto;
   margin-top:5px;
   margin-bottom:1px;  
-  background-color: #3864F8;
+  background-color: #FFFFFF;
+/*#3864F8;*/
 }
 .no_margin{
   margin: 0px 0px 1px 0px;
@@ -75,11 +76,16 @@ background color: #FFFFFF;
 	height:435px;
 	margin:auto;
 }
+#container_footer {
+	position:relative;
+	top:140px;
+	left:200px;
+}
 
 #get_started{
 	position:absolute;
-	top:320px;
-	left:755px;
+	top:220px;
+	left:115px;
 }
 
 
