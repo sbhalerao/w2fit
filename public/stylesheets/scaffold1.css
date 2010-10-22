@@ -76,10 +76,10 @@ background color: #FFFFFF;
 	height:435px;
 	margin:auto;
 }
-#container_footer {
-	position:relative;
-	top:140px;
-	left:200px;
+#facebook {
+	position:absolute;
+	top:570px;
+	left:80px;
 }
 
 #get_started{
