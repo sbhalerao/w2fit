@@ -4,14 +4,14 @@ body {
   font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #333333;
   font-size: 75%;
-  background-image: url(../images/bg_page.jpg);
+  background-image: url(http://www.shoedazzle.com/images/shared/bg_page.jpg);
   background-repeat: repeat-x;
   background-position:top center;
 }
 #page_wrap_outer {
   min-width:940px;
   margin:auto;
-  background: url(../images/bg_page_wrap_outer.jpg) no-repeat scroll top center;
+  background: url(http://www.shoedazzle.com/images/shared/bg_page_wrap_outer.jpg) no-repeat scroll top center;
   _background-image: none;
   _background-color:#ffffff;
 background color: #FFFFFF;
@@ -84,14 +84,21 @@ background color: #FFFFFF;
 
 #get_started{
 	position:absolute;
-	top:420px;
-	left:410px;
+	top:120px;
+	left:310px;
 }
 
+#button{
+	position:absolute;
+	top:360px;
+	left:380px;
+}
 
-
-
-
+#text{
+	position:absolute;
+	top:300px;
+	left:220px;
+}
 
 
 /* Jens survey class*/
