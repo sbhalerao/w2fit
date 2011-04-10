@@ -1,0 +1,164 @@
+
+
+body {
+  font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 90%;
+  background-image: url(bg_page.jpg);
+  background-repeat: repeat-x repeat-y;
+  background-position:top center;
+}
+
+#page_wrap_outer {
+  min-width:500px;
+  margin:none;
+  _background-image: none;
+  _background-color:#ffffff;
+background color: #FFFFFF;
+  height:100%;
+  min-height:540px;
+  }
+
+
+			
+#header {width: 100%;
+position:absolute;
+top:10px;
+left:100px;
+}
+
+#logo {
+position:absolute;
+top:0px;
+left:50px;
+cursor: pointer;
+opacity: 0.9;
+}
+
+#logo:hover {
+    opacity: 1;
+}
+#logo.active {
+    opacity: 1;
+}
+
+#home_button {
+position:absolute;
+top:21px;
+left:550px;
+cursor: pointer;
+opacity: 0.7;
+}
+
+#home_button:hover {
+    opacity: 1;
+}
+#home_button.active {
+    opacity: 1;
+}
+
+
+#about_button{
+position:absolute;
+top:19px;
+left:630px;
+cursor: pointer;
+opacity: 0.7;
+}
+
+#about_button:hover {
+    opacity: 1;
+}
+#about_button.active {
+    opacity: 1;
+}
+
+#blog_button{position:absolute;
+top:19px;
+left:710px;
+cursor: pointer;
+opacity: 0.7;
+}
+
+#blog_button:hover {
+    opacity: 1;
+}
+#blog_button.active {
+    opacity: 1;
+}
+
+#twitter_button{position:absolute;
+top:22px;
+left:790px;
+cursor: pointer;
+opacity: 0.7;
+}
+
+#twitter_button:hover {
+    opacity: 1;
+}
+#twitter_button.active {
+    opacity: 1;
+}
+
+#fb_button{position:absolute;
+top:15px;
+left:880px;
+cursor: pointer;
+opacity: 0.7;
+}
+
+#fb_button:hover {
+    opacity: 1;
+}
+#fb_button.active {
+    opacity: 1;
+}
+
+
+#text_describe {
+position:absolute;
+top:470px;
+left:225px;
+max-width:700px;}
+
+
+#email_enter {
+position:absolute;
+top:530px;
+left:225px;
+}
+
+.tb5 {
+	position:absolute;
+	top:537px;
+	left:250px;
+	width:310px;
+	font-style: italic bold;
+	font-size:10pt;
+}
+
+
+#button {
+	background-image: url(submit.png) no-repeat; 
+     position: absolute;
+     top: 535px;
+     left: 600px;
+    opacity:0.7;
+}
+#button:hover {
+    opacity:1.0;;
+}
+#button:active {
+    opacity: 1.0;;
+}
+
+#likebox{
+	position: absolute;
+	top:100px;
+	left:115px ;
+	
+}
+
+
+
